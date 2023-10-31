@@ -22,7 +22,7 @@ public class BuggyController : BaseApiController
         return "secret text";
     }
     
-    [HttpGet("not-founud")]
+    [HttpGet("not-found")]
     public ActionResult<AppUser> GetNotFound()
     {
         var thing = _context.Users.Find(-1);
